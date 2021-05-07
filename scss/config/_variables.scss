@@ -1,0 +1,20 @@
+$max-width: 1112px; //1200px
+
+:root {
+  --color-first  : #D87C49;
+  --color-dark   : #191919;
+  --color-border : #464646;
+  --color-text   : #898989;
+  --color-panel  : #ECECEC;
+  --color-white  : #FFFFFF;
+}
+
+:root {
+  --h1-font-size    : 3.75rem;        // 60px
+  --h2-font-size    : 2.5rem;         // 40px
+  --h3-font-size    : 1.75rem;        // 28px
+  --h4-font-size    : 1.125rem;       // 18px
+  --text-base-font-size    : 1rem;    // 16px
+  --text-small-font-size   : .875rem; // 14px
+  --text-smaller-font-size : .8125rem;// 13px
+}
