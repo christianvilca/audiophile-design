@@ -3,5 +3,42 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  //display: flex;
+}
+
+.main-nav {
+  //display: none;
+  position: fixed;
+  height: calc(100vh - var(--header-height));
+  width: 80vw;
+  background-color: var(--color-dark);
+  top: var(--header-height);
+  left: -80vw;
+  transition: left .3s;
+
+  &.show {
+    left: 0;
+  }
+}
+
+.main-menu__item {
+  padding: 1rem;
+}
+
+.main-menu-toggle {
+  height: 1.625rem;
+  width: 1.625rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-shopping {
+  height: 1.625rem;
+  width: 1.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

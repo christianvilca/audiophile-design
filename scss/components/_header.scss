@@ -1,5 +1,5 @@
 .main-header {
-  height: 6rem; //4rem
+  height: var(--header-height); //4rem
   color: var(--color-white);
   background-color: var(--color-dark);
 }
