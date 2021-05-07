@@ -22,3 +22,7 @@ $max-width: 1112px; //1200px
 :root {
   --header-height: 6rem;
 }
+
+$breakpoints: (
+  l: 960px
+);

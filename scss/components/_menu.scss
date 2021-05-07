@@ -3,7 +3,10 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  //display: flex;
+  
+  @include from(l) {
+    display: flex;
+  }
 }
 
 .main-nav {
@@ -16,6 +19,12 @@
   left: -80vw;
   transition: left .3s;
 
+  @include from(l) {
+    position: static;
+    height: auto;
+    width: auto;
+  }
+
   &.show {
     left: 0;
   }
@@ -25,6 +34,17 @@
   padding: 1rem;
 }
 
+.main-menu__link {
+  display: block;
+  text-decoration: none;
+  padding: 1.2em 1.1875rem; //1.6em;
+  color: var(--color-white);
+  letter-spacing: 0.09rem;
+  font-weight: bold;
+  font-size: var(--text-smaller-font-size);
+  white-space: nowrap; // No saltar de linea
+}
+
 .main-menu-toggle {
   height: 1.625rem;
   width: 1.625rem;
@@ -32,6 +52,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  @include from(l) {
+    display: none;
+  }
 }
 
 .main-shopping {
