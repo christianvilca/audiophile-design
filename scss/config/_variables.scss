@@ -1,5 +1,9 @@
 $max-width: 1112px; //1200px
 
+$breakpoints: (
+  l: 960px
+);
+
 :root {
   --color-first  : #D87C49;
   --color-dark   : #191919;
@@ -17,15 +21,19 @@ $max-width: 1112px; //1200px
   --text-base-font-size    : 1rem;    // 16px
   --text-small-font-size   : .875rem; // 14px
   --text-smaller-font-size : .8125rem;// 13px
+
+  @include from(l) {
+    --h1-font-size    : 2.5rem;
+    --h2-font-size    : 1.75rem;
+    --h3-font-size    : 1.5rem;
+    --body-font-size  : 1rem;
+    --small-font-size : .8rem;
+  }
 }
 
 :root {
   --header-height: 6rem;
 }
-
-$breakpoints: (
-  l: 960px
-);
 
 :root {
   --z-back    : -10;
