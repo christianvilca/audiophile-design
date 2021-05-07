@@ -1,7 +1,12 @@
 $max-width: 1112px; //1200px
 
 $breakpoints: (
-  l: 960px
+  //l: 960px
+  xs: 347px,
+  sm: 347px,
+  md: 831px,
+  lg: 1440px,
+  xl: 1440px
 );
 
 :root {
@@ -22,7 +27,7 @@ $breakpoints: (
   --text-small-font-size   : .875rem; // 14px
   --text-smaller-font-size : .8125rem;// 13px
 
-  @include from(l) {
+  @include from(md) {
     --h1-font-size    : 2.5rem;
     --h2-font-size    : 1.75rem;
     --h3-font-size    : 1.5rem;

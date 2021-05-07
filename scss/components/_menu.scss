@@ -4,7 +4,7 @@
   padding-left: 0;
   list-style: none;
   
-  @include from(l) {
+  @include from(md) {
     display: flex;
   }
 }
@@ -20,7 +20,7 @@
   transition: left .3s;
   z-index: --z-fixed;
 
-  @include from(l) {
+  @include from(md) {
     position: static;
     height: auto;
     width: auto;
@@ -54,7 +54,7 @@
   align-items: center;
   cursor: pointer;
 
-  @include from(l) {
+  @include from(md) {
     display: none;
   }
 }
