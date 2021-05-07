@@ -18,6 +18,7 @@
   top: var(--header-height);
   left: -80vw;
   transition: left .3s;
+  z-index: --z-fixed;
 
   @include from(l) {
     position: static;

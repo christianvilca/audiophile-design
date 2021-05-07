@@ -26,3 +26,11 @@ $max-width: 1112px; //1200px
 $breakpoints: (
   l: 960px
 );
+
+:root {
+  --z-back    : -10;
+  --z-normal  : 1;
+  --z-tooltip : 10;
+  --z-fixed   : 100;
+  --z-modal   : 1000;
+}
