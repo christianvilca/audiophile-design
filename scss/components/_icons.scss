@@ -1,0 +1,21 @@
+.icon-box {
+  --height: 1rem; 
+  --width: 1rem;
+
+  @include from(md) {
+    --height: 1.625rem; //26px
+    --width: 1.625rem;
+  }
+
+  @include from(lg) {
+    --height: 1.625rem;
+    --width: 1.625rem;
+  }
+  
+  height: var(--height);
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

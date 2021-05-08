@@ -4,7 +4,7 @@
   padding-left: 0;
   list-style: none;
   
-  @include from(md) {
+  @include from(lg) {
     display: flex;
   }
 }
@@ -20,7 +20,7 @@
   transition: left .3s;
   z-index: --z-fixed;
 
-  @include from(md) {
+  @include from(lg) {
     position: static;
     height: auto;
     width: auto;
@@ -47,23 +47,7 @@
 }
 
 .main-menu-toggle {
-  height: 1.625rem;
-  width: 1.625rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
-  @include from(md) {
+  @include from(lg) {
     display: none;
   }
-}
-
-.main-shopping {
-  height: 1.625rem;
-  width: 1.625rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }

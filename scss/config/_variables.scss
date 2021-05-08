@@ -1,12 +1,11 @@
 $max-width: 1112px; //1200px
 
 $breakpoints: (
-  //l: 960px
-  xs: 347px,
-  sm: 347px,
-  md: 831px,
-  lg: 1440px,
-  xl: 1440px
+  //xs: 347px,
+  //sm: 347px,
+  md: 347px,
+  lg: 831px,
+  //xl: 1440px
 );
 
 :root {
@@ -34,10 +33,32 @@ $breakpoints: (
     --body-font-size  : 1rem;
     --small-font-size : .8rem;
   }
+
+  @include from(lg) {
+    --h1-font-size    : 3.75rem;        // 60px
+    --h2-font-size    : 2.5rem;         // 40px
+    --h3-font-size    : 1.75rem;        // 28px
+    --h4-font-size    : 1.125rem;       // 18px
+    --text-base-font-size    : 1rem;    // 16px
+    --text-small-font-size   : .875rem; // 14px
+    --text-smaller-font-size : .8125rem;// 13px
+  }
 }
 
 :root {
-  --header-height: 6rem;
+  --header-height: 5.1875rem; //83px
+
+  @include from(md) {
+    --header-height: 6rem; //96px
+  }
+
+  @include from(lg) {
+    --header-height: 6rem; //96px
+  }
+  
+  /* @include from(lg) {
+    --header-height: 6rem;
+  } */
 }
 
 :root {

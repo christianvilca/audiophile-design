@@ -1,3 +1,11 @@
+.base {
+  font-size : var(--text-base-font-size);
+}
+
 .small {
   font-size : var(--text-small-font-size);
+}
+
+.smaller {
+  font-size : var(--text-smaller-font-size);
 }
