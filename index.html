@@ -32,7 +32,17 @@
   </header>
 
   <div class="main-banner center-block">
-    <img src="img/mobile/headphones.png" alt="Banner Audio" class="main-banner__hero-image">
+    <!-- <img 
+      srcset="img/mobile/headphones.png, img/tablet/headphones.png"
+      src="img/mobile/headphones.png" 
+      alt="Banner Audio" 
+      class="main-banner__hero-image max-width"
+    > -->
+    <picture class="main-banner__hero-image">
+      <source srcset="img/tablet/headphones.png" media="(min-width: 347px)">
+      <source srcset="img/desktop/headphones.png" media="(min-width: 831px)">
+      <img src="img/mobile/headphones.png" alt="Banner Audio">
+    </picture>
     <div class="main-banner__content">
       <span class="main-banner__text small">NEW PRODUCT</span>
       <h1 class="main-banner__title">XX99 MARK II HEADPHONES</h1>
