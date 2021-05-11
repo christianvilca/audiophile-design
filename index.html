@@ -12,7 +12,7 @@
 <body>
   <!-- Header -->
   <header class="main-header">
-    <div class="l-container main-header__block">
+    <div class="m-container main-header__block">
       <div class="main-menu-toggle" id="main-menu-toggle">
         <img src="img/menu.svg" alt="logo" class="main-menu-toggle__img icon-box">
       </div>
@@ -38,18 +38,22 @@
       alt="Banner Audio" 
       class="main-banner__hero-image max-width"
     > -->
-    <picture class="main-banner__hero-image">
-      <source srcset="img/tablet/headphones.png" media="(min-width: 347px)">
-      <source srcset="img/desktop/headphones.png" media="(min-width: 831px)">
-      <img src="img/mobile/headphones.png" alt="Banner Audio">
-    </picture>
-    <div class="main-banner__content">
-      <span class="main-banner__text small">NEW PRODUCT</span>
-      <h1 class="main-banner__title">XX99 MARK II HEADPHONES</h1>
-      <p class="main-banner__description">Experience natural, lifelike audio and exceptiona build quality made for the passionate music enthusiast.</p>
-      <a href="#" class="btn btn-primary smaller center-block">
-        SEE PRODUCT
-      </a>
+    <div class="l-container">
+      <div class="banner-grid">
+        <picture class="main-banner__hero-image">
+          <source srcset="img/tablet/headphones.png" media="(min-width: 347px)">
+          <source srcset="img/desktop/headphones.png" media="(min-width: 831px)">
+          <img src="img/mobile/headphones.png" alt="Banner Audio">
+        </picture>
+        <div class="main-banner__content">
+          <span class="main-banner__text small">NEW PRODUCT</span>
+          <h1 class="main-banner__title">XX99 MARK II HEADPHONES</h1>
+          <p class="main-banner__description">Experience natural, lifelike audio and exceptiona build quality made for the passionate music enthusiast.</p>
+          <a href="#" class="btn btn-primary smaller center-block">
+            SEE PRODUCT
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 

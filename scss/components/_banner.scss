@@ -14,8 +14,10 @@
     left: 0;
     margin: 0 0.75rem 0 0.75rem;
     padding-top: 6.375rem;
-    width: 100%;
     
+    @include from(lg) {
+      text-align: left;
+    }
   }
   
   &__hero-image {
@@ -29,6 +31,11 @@
     object-fit: scale-down;
     object-position: center;
     opacity: .5;
+
+    @include from(lg) {
+      position: static;
+      order: 2;
+    }
   }
 }
 
@@ -61,5 +68,14 @@
 
   @include from(lg) {
     margin: 2.5rem 0;
+  }
+}
+
+.banner-grid {
+  @include from(lg) {
+    display               : grid;
+    grid-template-columns : repeat(2, 1fr);
+    grid-gap              : 2rem;
+    grid-auto-flow: column;
   }
 }
