@@ -3,10 +3,20 @@
   background-color: var(--color-dark);
   text-align: center;
   width: 100%;
-
+  height: 29.5rem;
   position: relative;
-  min-height: 34.6875rem; //calc( 100vh - var(--header-height));
+  //min-height: 34.6875rem; //calc( 100vh - var(--header-height));
+  //min-height: calc( 100vh + var(--header-height));
+  //height: 43.125rem;//48rem;
   //margin-top: 6.375rem;
+
+  @include from(md) {
+    //max-height: 43.125rem;
+    height: 43.125rem;
+  }
+  @include from(lg) {
+    height: 39.5rem;
+  }
 
   &__content {
     position: relative;

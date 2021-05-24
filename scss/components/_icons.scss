@@ -19,3 +19,15 @@
   align-items: center;
   cursor: pointer;
 }
+
+[class*=icon-]::after {
+  content      : "";
+  display      : inline-block;
+  margin-right : .15rem;
+  width        : 1em;
+  height       : 1em;
+}
+
+.icon-location::after {
+  background : url(../img/right.svg);
+}
