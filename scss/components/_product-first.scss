@@ -1,0 +1,95 @@
+.product-first {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width           : 100%;
+  height          : 34.6875rem;
+  border-radius   : .5rem;
+  background      : var(--color-first);
+  overflow        : hidden;
+  margin-left  : auto;
+  margin-right : auto;
+  //padding: 0 1rem;
+
+  @include from(md) {
+    height          : 48.625rem;
+  }
+
+  @include from(lg) {
+    height          : 35rem;
+  }
+
+  &__grid {
+    @include from(lg) {
+      display               : grid;
+      grid-template-columns : repeat(2, 1fr);
+      grid-gap              : 6rem;
+      grid-auto-flow: column;
+    }
+  }
+
+  &__background {
+    position: relative;
+    width: 100%;
+  }
+  
+  &__img {
+    display: flex;
+    justify-content : center;
+    align-items: center; 
+
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    height: 16rem;
+    width: 16rem;
+    box-shadow: 0 0 0 1px var(--color-border-2),
+                0 0 0 1.25rem var(--color-first),
+                0 0 0 calc(1.25rem + 1px) var(--color-border-2),
+                0 0 0 8rem var(--color-first),
+                0 0 0 calc(8rem + 1px) var(--color-border-2);
+
+    @include from(md) {
+      height: 30.875rem;
+      width: 30.875rem;
+      margin-top: -1.5rem;
+    }
+    @include from(lg) {
+      height: 31.6875rem;
+      width: 31.6875rem;
+      margin-top: 7.5rem;
+    }
+  }
+
+  &__img img {
+    @include from(lg) {
+      margin-top: -1.5rem;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    margin-top: -.5rem;
+    text-align: center;
+    
+    > .main-banner__description {
+      padding: 0 1rem;
+      color: var(--color-white);
+    }
+
+    @include from(md) {
+      margin-top: -4.5rem;
+      > .main-banner__description {
+        padding: 0 0 ;
+      }
+    }
+    
+    @include from(lg) {
+      margin-top: 8.1875rem;
+      text-align: left;
+      > .main-banner__description {
+        padding: 0 0 ;
+      }
+    }
+  }
+}
