@@ -9,6 +9,13 @@
   }
 }
 
+.mn-border {
+  box-shadow: 1px 8px 8px #FFF;
+  @include from(lg) {
+    box-shadow: none;
+  }
+}
+
 .main-nav {
   //display: none;
   position: fixed;
@@ -16,7 +23,7 @@
   width: 80vw;
   background-color: var(--color-dark);
   top: var(--header-height);
-  left: -80vw;
+  left: -100%; //80vw;
   transition: left .3s;
   z-index: var(--z-fixed);
 

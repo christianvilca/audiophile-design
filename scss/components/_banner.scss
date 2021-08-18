@@ -41,6 +41,7 @@
     object-fit: scale-down;
     object-position: center;
     opacity: .5;
+    background: radial-gradient(50% 50% at 50% 50%, #828282 0%, rgba(205, 205, 205, 0) 100%);
 
     @include from(lg) {
       position: static;

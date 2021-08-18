@@ -214,13 +214,19 @@ p {
     .main-menu {
       display: flex; } }
 
+.mn-border {
+  box-shadow: 1px 8px 8px #FFF; }
+  @media screen and (min-width: 831px) {
+    .mn-border {
+      box-shadow: none; } }
+
 .main-nav {
   position: fixed;
   height: calc(100vh - var(--header-height));
   width: 80vw;
   background-color: var(--color-dark);
   top: var(--header-height);
-  left: -80vw;
+  left: -100%;
   transition: left .3s;
   z-index: var(--z-fixed); }
   @media screen and (min-width: 831px) {
@@ -277,7 +283,8 @@ p {
     width: 100%;
     object-fit: scale-down;
     object-position: center;
-    opacity: .5; }
+    opacity: .5;
+    background: radial-gradient(50% 50% at 50% 50%, #828282 0%, rgba(205, 205, 205, 0) 100%); }
     @media screen and (min-width: 831px) {
       .main-banner__hero-image {
         position: static;
