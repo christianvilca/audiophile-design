@@ -749,8 +749,8 @@ p {
   content: "";
   display: inline-block;
   margin-right: .15rem;
-  width: 1em;
-  height: 1em; }
+  width: 1rem;
+  height: 1rem; }
 
 .icon-location::after {
   background: url(../img/right.svg); }
